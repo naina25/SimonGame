@@ -17,3 +17,7 @@ function nextSequence()
     audio.play();
 }
 
+$(".btn").on('click',function(){
+    var userChosenColor = this.id;
+    console.log(userChosenColor)
+})

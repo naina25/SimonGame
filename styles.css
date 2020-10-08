@@ -10,7 +10,6 @@ h1{
     font-size: 3.0rem ;
     margin : 50px 0;
     text-transform: capitalize;
-
 }
 .btn{
     width: 220px;
@@ -23,16 +22,16 @@ h1{
     margin: 0 auto;
     width: 50%;
 }
-.red{
+#red{
     background-color: red;
 
 }
-.green{
+#green{
     background-color: green;
 }
-.yellow{
+#yellow{
     background-color: yellow;
 }
-.blue{
+#blue{
     background-color: blue;
 }

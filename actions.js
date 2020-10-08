@@ -7,7 +7,16 @@ $(".btn").on('click',function(){
     var userChosenColor = this.id;
     userClickedPattern.push(userChosenColor);
     playSound(userChosenColor);
+    animatePress(userChosenColor);
 });
+
+function animatePress(currentColour){
+    $('#' + currentColour).addClass("pressed");
+    setTimeout(function(){
+        $('#' + currentColour).removeClass("pressed");
+    },100);
+}
+
 
 function nextSequence() 
 {

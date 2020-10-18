@@ -49,4 +49,12 @@ function checkAnswer(currentLevel){
             userClickedPattern = [];
         }
     }
+    else{
+        playSound('wrong');
+        $('body').addClass('gameOver');
+        setTimeout(function(){
+            $('body').removeClass('gameOver');
+        },200);
+        $('h1').text('Game Over , Press any key to restart');
+    }
 }

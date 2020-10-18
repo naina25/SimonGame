@@ -17,6 +17,7 @@ h1{
     border-radius: 50px;
     border: 10px solid black;
     margin: 25px;
+    outline: none;
 }
 .container{
     margin: 0 auto;

@@ -19,6 +19,7 @@ $(".btn").on('click',function(){
     userClickedPattern.push(userChosenColor);
     playSound(userChosenColor);
     animatePress(userChosenColor);
+    checkAnswer(userClickedPattern.length-1);
 });
 
 function animatePress(currentColour){
@@ -39,4 +40,13 @@ function nextSequence()
 function playSound(name){
     var audio = new Audio(`sounds/${name}.mp3`);
     audio.play();
+}
+
+function checkAnswer(currentLevel){
+    if(userClickedPattern[currentLevel] === gamePattern[currentLevel]){
+        if(userClickedPattern.length === gamePattern.length){
+            setTimeout(nextSequence, 1000);
+            userClickedPattern = [];
+        }
+    }
 }
